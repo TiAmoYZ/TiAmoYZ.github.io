@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="TiAmo">
 <meta property="og:description" content="善用watch的immediate属性这一点我在项目中也是这么写的。例如有请求需要再也没初始化的时候就执行一次，然后监听他的变化，很多人这么写：12345678created()&amp;#123;    this.fetchPostList()&amp;#125;,watch: &amp;#123;    searchInputValue()&amp;#123;        this.fetchPostList()    &amp;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-28T07:50:23.227Z">
+<meta property="og:updated_time" content="2018-05-28T09:12:55.451Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="notes">
 <meta name="twitter:description" content="善用watch的immediate属性这一点我在项目中也是这么写的。例如有请求需要再也没初始化的时候就执行一次，然后监听他的变化，很多人这么写：12345678created()&amp;#123;    this.fetchPostList()&amp;#125;,watch: &amp;#123;    searchInputValue()&amp;#123;        this.fetchPostList()    &amp;">
@@ -155,7 +155,7 @@
       
         <h3 id="善用watch的immediate属性"><a href="#善用watch的immediate属性" class="headerlink" title="善用watch的immediate属性"></a>善用watch的immediate属性</h3><p>这一点我在项目中也是这么写的。例如有请求需要再也没初始化的时候就执行一次，然后监听他的变化，很多人这么写：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">created</span></span>()&#123;</span><br><span class="line">    this.fetchPostList()</span><br><span class="line">&#125;,</span><br><span class="line">watch: &#123;</span><br><span class="line">    <span class="function"><span class="title">searchInputValue</span></span>()&#123;</span><br><span class="line">        this.fetchPostList()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;P</span><br></pre></td></tr></table></figure></p>
 <p>上面的这种写法我们可以完全如下写：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">watch: &#123;</span><br><span class="line">    searchInputValue:&#123;</span><br><span class="line">        handler: <span class="string">'fetchPostList'</span>,</span><br><span class="line">        immediate: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>传送门: <a href="https://zqs9004.github.io/" target="_blank" rel="noopener">biubiu</a></p>
+<p>传送门: <a href="https://github.com/zqs9004/zqs9004.github.io/" target="_blank" rel="noopener">欢迎issue，star</a></p>
 
       
 
@@ -415,7 +415,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://www.baidu.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接</a>
+              <a href="https://github.com/zqs9004/zqs9004.github.io" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>欢迎issue，star</a>
             </li>
           
         </ul>
@@ -426,7 +426,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;div&gt;&lt;a href=&#34;https://github.com/zqs9004/zqs9004.github.io&#34;&gt;欢迎issue，star&lt;/a&gt;&lt;br&gt;&lt;br&gt;很惭愧&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家&lt;br&gt;&lt;/div</div>
   	  	
     	</section>
     
